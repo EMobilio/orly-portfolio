@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Animation from './pages/Animation';
+import Videos from './pages/Videos';
 import Design from './pages/Design';
 import Experience from './pages/Experience';
 import Photography from './pages/Photography';
@@ -19,7 +19,7 @@ function Root() {
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/about" element={<About />} />
-        <Route path="/animation" element={<Animation />} />
+        <Route path="/videos" element={<Videos />} />
         <Route path="/design" element={<Design />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/portfolio" element={<Portfolio />} />

@@ -1,36 +1,3 @@
-// Landscape Images
-import acadia1 from '../assets/images/photography/landscape/DSC_0373 edited.png';
-import grassHouse from '../assets/images/photography/landscape/Poland Grass House.jpg';
-import acadia2 from '../assets/images/photography/landscape/DSC_0317.png';
-import acadia3 from '../assets/images/photography/landscape/DSC_0309 copy.png';
-import mountains from '../assets/images/photography/landscape/Mountains Israel.jpg';
-import arizonaFire from '../assets/images/photography/landscape/DSC_0434.JPG';
-
-// Still Life Images
-import seagull from '../assets/images/photography/still-life/Acadian Seagull 1.jpg';
-import chipmunk from '../assets/images/photography/still-life/DSC_0215.JPG';
-import bird from '../assets/images/photography/still-life/DSC_0806_cropped.png';
-import rainbowShadow from '../assets/images/photography/still-life/Rainbow Shadow.jpg';
-import seaLions from '../assets/images/photography/still-life/DSC_0409.png';
-import flowersWater from '../assets/images/photography/still-life/Flowers and Water.jpg';
-import deer from '../assets/images/photography/still-life/Deer Drinking edited.png';
-import treesGreen from '../assets/images/photography/still-life/Trees Green.jpg';
-import benchLeaves from '../assets/images/photography/still-life/Bench Leaves.jpg';
-import catWhiskers from '../assets/images/photography/still-life/Cat Whiskers.jpg';
-
-// // Food Images
-// import gnocchi from '../assets/images/photography/food/IMG_4504_edited.png';
-// import frenchToast from '../assets/images/photography/food/IMG_2567_edited.png';
-// import sandwich from '../assets/images/photography/food/IMG_3836_edited v2.png';
-// import spaghetti from '../assets/images/photography/food/IMG_5975_edited.png';
-
-// Portrait Images
-import engagement1 from '../assets/images/photography/portrait/DSC_0205 copy v1.png';
-import engagement2 from '../assets/images/photography/portrait/DSC_0160 copy V1.png';
-import engagement3 from '../assets/images/photography/portrait/DSC_0239 copy v1.png';
-import engagement4 from '../assets/images/photography/portrait/DSC_0206 copy v1.png';
-import engagement5 from '../assets/images/photography/portrait/DSC_0448 copy v1.png';
-import engagement6 from '../assets/images/photography/portrait/DSC_0351-2 copy V1.png';
 import TabbedSidebar from '../components/TabbedSidebar';
 
 const Photography = () => {
@@ -47,14 +14,14 @@ const Photography = () => {
         <br />
         <div id="designCont1">
           <div id="leftPhoto">
-            <img src={acadia1} alt="acadia" />
-            <img src={grassHouse} alt="house in grass" />
-            <img src={acadia2} alt="acadia" />
+            <img src="/images/photography/landscape/DSC_0373 edited.png" alt="acadia" loading="lazy" />
+            <img src="/images/photography/landscape/Poland Grass House.jpg" alt="house in grass" loading="lazy" />
+            <img src="/images/photography/landscape/DSC_0317.png" alt="acadia" loading="lazy" />
           </div>
           <div id="rightPhoto">
-            <img src={acadia3} alt="acadia" />
-            <img src={mountains} alt="mountains" />
-            <img src={arizonaFire} alt="arizona fire" />
+            <img src="/images/photography/landscape/DSC_0309 copy.png" alt="acadia" loading="lazy" />
+            <img src="/images/photography/landscape/Mountains Israel.jpg" alt="mountains" loading="lazy" />
+            <img src="/images/photography/landscape/DSC_0434.JPG" alt="arizona fire" loading="lazy" />
           </div>
         </div>
       </>
@@ -65,18 +32,18 @@ const Photography = () => {
         <br />
         <div id="designCont1">
           <div id="leftPhoto">
-            <img src={seagull} alt="seagull at acadia" />
-            <img src={chipmunk} alt="chipmunk" />
-            <img src={bird} alt="bird" />
-            <img src={rainbowShadow} alt="rainbow shadow" />
+            <img src="/images/photography/still-life/Acadian Seagull 1.jpg" alt="seagull at acadia" loading="lazy" />
+            <img src="/images/photography/still-life/DSC_0215.JPG" alt="chipmunk" loading="lazy" />
+            <img src="/images/photography/still-life/DSC_0806_cropped.png" alt="bird" loading="lazy" />
+            <img src="/images/photography/still-life/Rainbow Shadow.jpg" alt="rainbow shadow" loading="lazy" />
           </div>
           <div id="rightPhoto">
-            <img src={seaLions} alt="sea lions" />
-            <img src={flowersWater} alt="flowers and water" />
-            <img src={deer} alt="deer drinking water" />
-            <img src={treesGreen} alt="tree" />
-            <img src={benchLeaves} alt="autumn bench" />
-            <img src={catWhiskers} alt="cat whiskers" />
+            <img src="/images/photography/still-life/DSC_0409.png" alt="sea lions" loading="lazy" />
+            <img src="/images/photography/still-life/Flowers and Water.jpg" alt="flowers and water" loading="lazy" />
+            <img src="/images/photography/still-life/Deer drinking edited.png" alt="deer drinking water" loading="lazy" />
+            <img src="/images/photography/still-life/Trees Green.jpg" alt="tree" loading="lazy" />
+            <img src="/images/photography/still-life/Bench Leaves.jpg" alt="autumn bench" loading="lazy" />
+            <img src="/images/photography/still-life/Cat Whiskers.jpg" alt="cat whiskers" loading="lazy" />
           </div>
         </div>
       </>
@@ -87,14 +54,14 @@ const Photography = () => {
         <br />
         <div id="designCont1">
           <div id="leftPhoto">
-            <img src={engagement1} alt="engagement photo" />
-            <img src={engagement2} alt="engagement photo" />
-            <img src={engagement3} alt="engagement photo" />
+            <img src="/images/photography/portrait/DSC_0205 copy v1.png" alt="engagement photo" loading="lazy" />
+            <img src="/images/photography/portrait/DSC_0160 copy V1.png" alt="engagement photo" loading="lazy" />
+            <img src="/images/photography/portrait/DSC_0239 copy v1.png" alt="engagement photo" loading="lazy" />
           </div>
           <div id="rightPhoto">
-            <img src={engagement4} alt="engagement photo" />
-            <img src={engagement5} alt="engagement photo" />
-            <img src={engagement6} alt="engagement photo" />
+            <img src="/images/photography/portrait/DSC_0206 copy v1.png" alt="engagement photo" loading="lazy" />
+            <img src="/images/photography/portrait/DSC_0448 copy v1.png" alt="engagement photo" loading="lazy" />
+            <img src="/images/photography/portrait/DSC_0351-2 copy V1.png" alt="engagement photo" loading="lazy" />
           </div>
         </div>
       </>

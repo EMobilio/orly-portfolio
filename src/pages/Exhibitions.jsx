@@ -1,8 +1,4 @@
 // Using placeholder images from photography for now - these should be replaced with actual exhibition images
-import acadia1 from '../assets/images/photography/landscape/DSC_0373 edited.png';
-import grassHouse from '../assets/images/photography/landscape/Poland Grass House.jpg';
-import acadia3 from '../assets/images/photography/landscape/DSC_0309 copy.png';
-import mountains from '../assets/images/photography/landscape/Mountains Israel.jpg';
 
 const Exhibitions = () => {
   return (
@@ -12,12 +8,12 @@ const Exhibitions = () => {
         <br />
         <div id="designCont1">
           <div id="leftPhoto">
-            <img src={acadia1} alt="exhibition image" />
-            <img src={grassHouse} alt="exhibition image" />
+            <img src="/images/photography/landscape/DSC_0373 edited.png" alt="exhibition image" />
+            <img src="/images/photography/landscape/Poland Grass House.jpg" alt="exhibition image" />
           </div>
           <div id="rightPhoto">
-            <img src={acadia3} alt="exhibition image" />
-            <img src={mountains} alt="exhibition image" />
+            <img src="/images/photography/landscape/DSC_0309 copy.png" alt="exhibition image" />
+            <img src="/images/photography/landscape/Mountains Israel.jpg" alt="exhibition image" />
           </div>
         </div>
 
@@ -26,12 +22,12 @@ const Exhibitions = () => {
         <br />
         <div id="designCont1">
           <div id="leftPhoto">
-            <img src={acadia1} alt="exhibition image" />
-            <img src={grassHouse} alt="exhibition image" />
+            <img src="/images/photography/landscape/DSC_0373 edited.png" alt="exhibition image" />
+            <img src="/images/photography/landscape/Poland Grass House.jpg" alt="exhibition image" />
           </div>
           <div id="rightPhoto">
-            <img src={acadia3} alt="exhibition image" />
-            <img src={mountains} alt="exhibition image" />
+            <img src="/images/photography/landscape/DSC_0309 copy.png" alt="exhibition image" />
+            <img src="/images/photography/landscape/Mountains Israel.jpg" alt="exhibition image" />
           </div>
         </div>
 

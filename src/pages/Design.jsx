@@ -1,76 +1,5 @@
 import TabbedSidebar from '../components/TabbedSidebar';
 
-// Digital Drawing Images
-import bloomingHands from '../assets/images/digital-drawing/Blooming Hands.jpg';
-import digitalPolish from '../assets/images/digital-drawing/Digital Polish Bright.jpg';
-import retroEyes from '../assets/images/digital-drawing/Retro Eyes.png';
-import curlyHair from '../assets/images/digital-drawing/Mobilio_Curly Haired Dailies-04.png';
-import lastHostage from '../assets/images/digital-drawing/Until the Last Hostage.png';
-import meafelaLora from '../assets/images/digital-drawing/Mobilio_Orly_ MeAfela L’Ora_8x10.png';
-
-// Logos and Marketing Images
-import dotVintageLogo from '../assets/images/logos-and-marketing/dot vintage logo.png';
-import ciaLogo from '../assets/images/logos-and-marketing/CIA Logo v4.png';
-import feilersJerky from '../assets/images/logos-and-marketing/Feiler\'s Jerky Logo.png';
-import striveSports from '../assets/images/logos-and-marketing/Strive Sports Logo_No Border.png';
-import btMedical from '../assets/images/logos-and-marketing/BT Medical Innovations_Logo.png';
-import raeLogo from '../assets/images/logos-and-marketing/RAE_Logo.png';
-import noJewishVictimsLogo from '../assets/images/logos-and-marketing/No_More_Jewish_Victims_logo.png';
-import alumniNewsletter from '../assets/images/logos-and-marketing/Alumni_Newsletter_Cover.png';
-import yachadLogo from '../assets/images/logos-and-marketing/together we will win_final blue-01.png';
-
-// Digital Design Images
-import hockeyGraphic from '../assets/images/digital-design/The Pound_CT Ice Festival UConn Mens Hockey.png';
-import dermatologyAd from '../assets/images/digital-design/Dermatology Authority_Full Page Ad.png';
-import musicMonday from '../assets/images/digital-design/The Pound_Music Monday 2-3-20.png';
-import learningRx from '../assets/images/digital-design/Older Adults_LearningRx Flyer.jpg';
-// import earthDay from '../assets/images/digital-design/Dot Vintage Earth Day Facts_day 2-01.png';
-// import fifty from '../assets/images/digital-design/Shira_50_v3.png';
-import treeGraphic from "../assets/images/digital-design/Tree_of_Life_Donor_Campaign_v5.png";
-import awardFlyer from "../assets/images/digital-design/Eva_and_Arie_Halpern_Merit_Award.png";
-import thanksgivingResults from "../assets/images/digital-design/Thanksgiving Results One Sheet.png";
-
-// Painting Images
-import susak from '../assets/images/paintings/Susak painting.jpg';
-import dandelion from '../assets/images/paintings/Acadia Dandelion painting.jpg';
-import cliffs from '../assets/images/paintings/Ireland Cliffs painting.jpg';
-import ftf from '../assets/images/paintings/FTF painting.jpg';
-import berryBush from '../assets/images/paintings/Berry Bush painting.jpg';
-import water from '../assets/images/paintings/Acadia Water painting.jpg';
-import fallenTree from '../assets/images/paintings/Acadia Fallen Tree painting.jpg';
-import beachTrees from '../assets/images/paintings/Acadia Beach Trees painting.jpg';
-import fireDove from '../assets/images/paintings/Fire_Dove.png';
-import forLighting from '../assets/images/paintings/For_the_Lightning.png';
-import forOceans from '../assets/images/paintings/For_the_Oceans.png';
-import forRainbows from '../assets/images/paintings/For_the_Rainbows.png';
-import home11x17 from '../assets/images/paintings/Home_11x17.png';
-import omerAdam from '../assets/images/paintings/Omer_Adam_Tribute.png';
-import onePeople from '../assets/images/paintings/One_People.png';
-import oriDanino from '../assets/images/paintings/Ori_Danino_ZL.png';
-import yasmineMohammed from '../assets/images/paintings/Yasmine_Mohammed_Tribute.png';
-import notAlone from '../assets/images/paintings/You_Are_Not_Alone.png';
-import miaSchem from '../assets/images/paintings/Zioness_Mia_Schem_v2.png';
-import utmmt from '../assets/images/paintings/UTMMT edited.png';
-
-// Traditional Drawing Images
-import rockingHorse from '../assets/images/traditional-drawing/Rocking Horse.jpg';
-import polarity from '../assets/images/traditional-drawing/Polarity.jpg';
-// import iphone from '../assets/images/traditional-drawing/iPhone.jpg';
-import bicycle from '../assets/images/traditional-drawing/Bicycle Sketch.jpg';
-// import doorHandle from '../assets/images/traditional-drawing/Door Handle.jpg';
-import edwina from '../assets/images/traditional-drawing/Edwina.jpg';
-
-// // 3D Art Images
-// import teacup from '../../img/portfolio-art/Teacup view 1 Final.png';
-// import waterLilies from '../../img/portfolio-art/Water Lilies 4.png';
-// import catDiner from '../../img/portfolio-art/Mobilio_Cat Retro Diner Scene View 1.png';
-// import raccoon1 from '../../img/portfolio-art/Mobilio_Trenchcoat Raccoon 1.png';
-// import raccoonHead from '../../img/portfolio-art/Raccoon Head.jpg';
-// import psychedelic from '../../img/portfolio-art/Psychedelic Sketch Toon view 1.png';
-// import alienBotany from '../../img/portfolio-art/Alien Botany still GI.png';
-// import radAnt from '../../img/portfolio-art/Rad Ant view 1.jpg';
-// import raccoon5 from '../../img/portfolio-art/Mobilio_Trenchcoat Raccoon 5.png';
-
 const Design = () => {
   const tabs = [
     { id: 'digital-design', label: 'digital design' },
@@ -79,7 +8,6 @@ const Design = () => {
     { id: 'digital-drawing', label: 'digital drawing' },
     { id: 'traditional-drawing', label: 'traditional drawing' },
     // { id: 'home-series', label: '"home" series' },
-    //{ id: '3d-art', label: '3D art' }
   ];
 
   const content = {
@@ -89,15 +17,15 @@ const Design = () => {
         <br />
         <div id="designCont4">
           <div id="leftArt">
-            <img src={treeGraphic} alt="tree campaign graphic" />
-            <img src={dermatologyAd} alt="full page ad" />
-            <img src={hockeyGraphic} alt="men's hockey graphic" />
-            <img src={thanksgivingResults} alt="thanksgiving results flyer" />
+            <img src="/images/digital-design/Tree_of_Life_Donor_Campaign_v5.png" alt="tree campaign graphic" loading="lazy" />
+            <img src="/images/digital-design/Dermatology Authority_Full Page Ad.png" alt="full page ad" loading="lazy" />
+            <img src="/images/digital-design/The Pound_CT Ice Festival UConn Mens Hockey.png" alt="men's hockey graphic" loading="lazy" />
+            <img src="/images/digital-design/Thanksgiving Results One Sheet.png" alt="thanksgiving results flyer" loading="lazy" />
           </div>
           <div id="rightArt">
-            <img src={musicMonday} alt="music monday graphic" />
-            <img src={learningRx} alt="learning rx flyer" />
-            <img src={awardFlyer} alt="award fliyer" />
+            <img src="/images/digital-design/The Pound_Music Monday 2-3-20.png" alt="music monday graphic" loading="lazy" />
+            <img src="/images/digital-design/Older Adults_LearningRx Flyer.jpg" alt="learning rx flyer" loading="lazy" />
+            <img src="/images/digital-design/Eva_and_Arie_Halpern_Merit_Award.png" alt="award fliyer" loading="lazy" />
           </div>
         </div>
       </>
@@ -108,17 +36,17 @@ const Design = () => {
         <br />
         <div id="designCont3">
           <div id="leftArt">
-            <img src={dotVintageLogo} alt="dot vintage logo" />
-            <img src={ciaLogo} alt="careers in aesthetics logo" />
-            <img src={raeLogo} alt="RAE logo" />
-            <img src={noJewishVictimsLogo} alt="No More Jewish Victims logo" />
-            <img src={yachadLogo} alt="together we will win logo" />
+            <img src="/images/logos-and-marketing/dot vintage logo.png" alt="dot vintage logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/CIA Logo v4.png" alt="careers in aesthetics logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/RAE_Logo.png" alt="RAE logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/No_More_Jewish_Victims_logo.png" alt="No More Jewish Victims logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/together we will win_final blue-01.png" alt="together we will win logo" loading="lazy" />
           </div>
           <div id="rightArt">
-            <img src={feilersJerky} alt="feiler's jerky logo" />
-            <img src={striveSports} alt="strive sports logo" />
-            <img src={btMedical} alt="BT Medical Innovations logo" />
-            <img src={alumniNewsletter} alt="alumni newsletter cover" />
+            <img src="/images/logos-and-marketing/Feiler's Jerky Logo.png" alt="feiler's jerky logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/Strive Sports Logo_No Border.png" alt="strive sports logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/BT Medical Innovations_Logo.png" alt="BT Medical Innovations logo" loading="lazy" />
+            <img src="/images/logos-and-marketing/Alumni_Newsletter_Cover.png" alt="alumni newsletter cover" loading="lazy" />
           </div>
         </div>
       </>
@@ -129,24 +57,23 @@ const Design = () => {
         <br />
         <div id="designCont5">
           <div id="leftArt">
-            <img src={susak} alt="susak painting" />
-            <img src={dandelion} alt="dandelion painting" />
-            <img src={cliffs} alt="ireland cliffs painting" />
-            <img src={ftf} alt="ftf painting" />
-            <img src={fireDove} alt="fire dove painting" />
-            <img src={forOceans} alt="for oceans painting" />
-            <img src={onePeople} alt="one people painting" />
-            <img src={miaSchem} alt="Mia Schem painting" />
+            <img src="/images/paintings/Susak painting.jpg" alt="susak painting" loading="lazy" />
+            <img src="/images/paintings/Acadia Dandelion painting.jpg" alt="dandelion painting" loading="lazy" />
+            <img src="/images/paintings/Ireland Cliffs painting.jpg" alt="ireland cliffs painting" loading="lazy" />
+            <img src="/images/paintings/FTF painting.jpg" alt="ftf painting" loading="lazy" />
+            <img src="/images/paintings/Fire_Dove.png" alt="fire dove painting" loading="lazy" />
+            <img src="/images/paintings/For_the_Oceans.png" alt="for oceans painting" loading="lazy" />
+            <img src="/images/paintings/One_People.png" alt="one people painting" loading="lazy" />
+            <img src="/images/paintings/UTMMT edited.png" alt="mishmish tree painting" loading="lazy" />
           </div>
           <div id="rightArt">
-            <img src={berryBush} alt="berry bush painting" />
-            <img src={water} alt="acadia water painting" />
-            <img src={fallenTree} alt="fallen tree painting" />
-            <img src={beachTrees} alt="beach trees painting" />
-            <img src={forLighting} alt="for lightning painting" />
-            <img src={forRainbows} alt="for rainbows painting" />
-            <img src={notAlone} alt="you are not alone painting" />
-            <img src={utmmt} alt="mishmish tree painting" />
+            <img src="/images/paintings/Berry Bush painting.jpg" alt="berry bush painting" loading="lazy" />
+            <img src="/images/paintings/Acadia Water painting.jpg" alt="acadia water painting" loading="lazy" />
+            <img src="/images/paintings/Acadia Fallen Tree painting.jpg" alt="fallen tree painting" loading="lazy" />
+            <img src="/images/paintings/Acadia Beach Trees painting.jpg" alt="beach trees painting" loading="lazy" />
+            <img src="/images/paintings/For_the_Lightning.png" alt="for lightning painting" loading="lazy" />
+            <img src="/images/paintings/For_the_Rainbows.png" alt="for rainbows painting" loading="lazy" />
+            <img src="/images/paintings/You_Are_Not_Alone.png" alt="you are not alone painting" loading="lazy" />
           </div>
         </div>
       </>
@@ -157,18 +84,19 @@ const Design = () => {
         <br />
         <div id="designCont1">
           <div id="leftArt">
-            <img src={omerAdam} alt="Omer Adam drawing" />
-            <img src={bloomingHands} alt="colorful hands drawing" />
-            <img src={digitalPolish} alt="nail polish drawing" />
-            <img src={lastHostage} alt="until the last hostage drawing" />
-            <img src={home11x17} alt="home drawing" />
+            <img src="images/digital-drawing/Omer_Adam_Tribute.png" alt="Omer Adam drawing" loading="lazy" />
+            <img src="/images/digital-drawing/Blooming Hands.jpg" alt="colorful hands drawing" loading="lazy" />
+            <img src="/images/digital-drawing/Digital Polish Bright.jpg" alt="nail polish drawing" loading="lazy" />
+            <img src="/images/digital-drawing/Until the Last Hostage.png" alt="until the last hostage drawing" loading="lazy" />
+            <img src='/images/digital-drawing/Home_11x17.png' alt="home drawing" loading="lazy" />
+            <img src="/images/digital-drawing/Zioness_Mia_Schem_v2.png" alt="Mia Schem drawing" loading="lazy" />
           </div>
           <div id="rightArt">
-            <img src={retroEyes} alt="comic eyes" />
-            <img src={curlyHair} alt="hair design" />
-            <img src={yasmineMohammed} alt="Yasmine Mohammed drawing" />
-            <img src={meafelaLora} alt="meAfela L'Ora drawing" />
-            <img src={oriDanino} alt="Ori Danino drawing" />
+            <img src="/images/digital-drawing/Retro Eyes.png" alt="comic eyes" loading="lazy" />
+            <img src="/images/digital-drawing/Mobilio_Curly Haired Dailies-04.png" alt="hair design" loading="lazy" />
+            <img src="/images/digital-drawing/Yasmine_Mohammed_Tribute.png" alt="Yasmine Mohammed drawing" loading="lazy" />
+            <img src="/images/digital-drawing/Mobilio_Orly_ MeAfela L’Ora_8x10.png" alt="meAfela L'Ora drawing" loading="lazy" />
+            <img src="/images/digital-drawing/Ori_Danino_ZL.png" alt="Ori Danino drawing" loading="lazy" />
           </div>
         </div>
       </>
@@ -179,12 +107,12 @@ const Design = () => {
         <br />
         <div id="designCont5">
           <div id="leftArt">
-            <img src={rockingHorse} alt="rocking horse drawing" />
-            <img src={polarity} alt="water droplets drawing" />
+            <img src="/images/traditional-drawing/Rocking Horse.jpg" alt="rocking horse drawing" loading="lazy" />
+            <img src="/images/traditional-drawing/Polarity.jpg" alt="water droplets drawing" loading="lazy" />
           </div>
           <div id="rightArt">
-            <img src={bicycle} alt="bicycle drawing" />
-            <img src={edwina} alt="cat drawing" />
+            <img src="/images/traditional-drawing/Bicycle Sketch.jpg" alt="bicycle drawing" loading="lazy" />
+            <img src="/images/traditional-drawing/Edwina.jpg" alt="cat drawing" loading="lazy" />
           </div>
         </div>
       </>

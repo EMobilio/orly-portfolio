@@ -32,7 +32,7 @@ const Header = () => {
           <ul>
             <li><Link to="/" className={isActive('/')}>home</Link></li>
             <li><Link to="/experience" className={isActive('/experience')}>experience</Link></li>
-            <li><Link to="/animation" className={isActive('/animation')}>animation</Link></li>
+            <li><Link to="/videos" className={isActive('/videos')}>videos</Link></li>
             <li><Link to="/design" className={isActive('/design')}>design</Link></li>
             <li><Link to="/photography" className={isActive('/photography')}>photography</Link></li>
           </ul>

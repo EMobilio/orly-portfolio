@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import homeVideo from '../../img/Alien Botany.mp4';
 
 const Home = () => {
   return (
@@ -7,7 +6,7 @@ const Home = () => {
       <div id="containerHomEx">
         <div id="homeVid">
           <video autoPlay muted loop id="homeVideo">
-            <source src={homeVideo} type="video/mp4" />
+            <source src="/videos/Alien Botany.mp4" type="video/mp4" />
           </video>
         </div>
 
