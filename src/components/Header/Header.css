@@ -1,0 +1,354 @@
+/* Header.css */
+
+/*HEADER*/
+header {
+	background-color: #f9f9f9;
+	padding: 0px;
+	margin: 0 auto;
+	top: 0;
+	z-index: 100;
+}
+
+header img {
+	padding: 0px;
+	margin: 0;
+}
+
+header h1 {
+	font-family: 'Oswald', sans-serif;
+	color: #38116e;
+	padding: 0px;
+	margin: 0;
+}
+
+header h2 {
+	font-size: 50px;
+}
+
+header h3 {
+	color: #ffc514;
+	font-size: 20px;
+}
+
+.lilBox {
+	background-color: #0f2827;
+	width: 250px;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-radius: 25px 0px 25px 0px;
+}
+
+#secFlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#logo {
+	display: flex;
+	align-self: flex-end;
+	padding-right: 10px;
+}
+
+#name {
+	display: flex;
+	align-self: flex-start;
+	flex: 1;
+}
+
+/*NAV*/
+.linked {
+	color: #ffc514;
+}
+
+nav {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+
+nav ul {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%;
+}
+
+nav ul li a {
+	display: block;
+	font-size: 20px;
+	color: #0f2827;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+nav ul li a:hover {
+	color: #fcfaff;
+}
+
+/* Hamburger button - hidden by default */
+.hamburger {
+	display: none;
+	flex-direction: column;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	z-index: 1002;
+	position: relative;
+}
+
+.hamburger span {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	margin: 3px 0;
+	transition: all 0.3s ease;
+	border-radius: 3px;
+}
+
+/* Hamburger animation when open */
+.hamburger.open span:nth-child(1) {
+	transform: rotate(45deg) translate(5.7px, 5.7px);
+}
+
+.hamburger.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+	overflow: hidden;
+}
+
+/* Mobile Header Styles */
+@media screen and (max-width: 1000px) {
+	.hamburger {
+		display: flex;
+		margin-right: 20px;
+	}
+
+	/* Dark overlay behind menu */
+	#nav.open::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 999;
+	}
+
+	#nav {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 70%;
+		height: 100vh;
+		transition: right 0.3s ease;
+		z-index: 1000;
+	}
+
+	#nav.open {
+		right: 0;
+	}
+
+	#nav nav {
+		background: white;
+		height: 100%;
+		box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+		position: relative;
+		z-index: 1001;
+		padding-top: 80px;
+		overflow-y: auto;
+	}
+
+	#nav ul {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		list-style: none;
+	}
+
+	#nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+
+	#nav ul li a {
+		display: block;
+		padding: 15px;
+		font-size: 18px;
+	}
+
+	header img {
+		width: 130px;
+		height: 130px;
+	}
+
+	header h1 {
+		font-size: 50px;
+		font-family: Oswald, sans-serif;
+		margin-left: 3%;
+		font-size: 15vw;
+	}
+
+	header h2 {
+		font-size: 45px;
+		width: 250px;
+		color: #0f2827;
+		text-shadow: 1px 1px 3px #0f2827;
+		padding-top: 0;
+	}
+
+	#secFlex {
+		display: flex;
+		padding: 10px 0;
+	}
+
+	#logo {
+		display: flex;
+		align-self: flex-end;
+		padding-right: 10px;
+	}
+
+	#name {
+		display: flex;
+		align-self: flex-start;
+	}
+
+	/*NAV*/
+	nav {
+		height: auto;
+		width: 100%;
+	}
+
+	nav ul li {
+		display: block;
+		padding-top: 2px;
+	}
+
+	nav ul li a {
+		display: block;
+		padding-left: 2px;
+		margin: 1px 2px;
+		text-decoration: none;
+	}
+
+	nav ul li a:hover {
+		color: #ffc514;
+	}
+}
+
+/* Extra small screens - make logo and name smaller */
+@media screen and (max-width: 500px) {
+	header img {
+		width: 90px;
+		height: 90px;
+	}
+
+	header h2 {
+		font-size: 30px;
+		width: auto;
+	}
+
+	header h3 {
+		font-size: 14px;
+	}
+
+	.lilBox {
+		width: 150px;
+		height: 25px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		text-align: center;
+	}
+
+	#logo {
+		padding-right: 0;
+	}
+}
+
+/* Desktop Header Styles */
+@media screen and (min-width: 1001px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header img {
+		width: 150px;
+		height: 150px;
+	}
+
+	header h1 {
+		font-size: 80px;
+		font-family: Oswald, sans-serif;
+		margin-left: 20%;
+		font-size: 9vw;
+		text-shadow: 2px 2px 4px #0f2827;
+	}
+
+	#logo {
+		display: flex;
+		padding-right: 20px;
+	}
+
+	#name {
+		display: flex;
+		padding: 0;
+		margin: 0;
+	}
+
+	#secFlex {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#name h2 {
+		text-shadow: 2px 4px 4px gray;
+		padding: 0;
+	}
+
+	#nav {
+		display: flex;
+	}
+
+	/*NAV*/
+	nav {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	nav ul {
+		display: -webkit-box;
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		padding-top: 103px;
+		margin: 0;
+	}
+
+	nav > ul {
+		display: flex;
+	}
+
+	nav a {
+		display: inline-flex;
+		font-size: 20px;
+		padding: 12px 15px 11px 15px;
+		justify-content: space-between;
+	}
+
+	nav ul li a:hover {
+		color: #ffc514;
+	}
+}

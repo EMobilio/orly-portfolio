@@ -1,15 +1,15 @@
 import { Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import Home from './pages/Home';
 import About from './pages/About';
-import Videos from './pages/Videos';
+import Video from './pages/Video';
 import Design from './pages/Design';
 import Experience from './pages/Experience';
 import Photography from './pages/Photography';
 import Portfolio from './pages/Portfolio';
 import Reel from './pages/Reel';
 import Exhibitions from './pages/Exhibitions';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
 function Root() {
   return (
@@ -19,7 +19,7 @@ function Root() {
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/about" element={<About />} />
-        <Route path="/videos" element={<Videos />} />
+        <Route path="/video" element={<Video />} />
         <Route path="/design" element={<Design />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/portfolio" element={<Portfolio />} />

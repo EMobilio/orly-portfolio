@@ -8,29 +8,18 @@ const Home = () => {
           <video autoPlay muted loop id="homeVideo">
             <source src="/videos/Alien Botany.mp4" type="video/mp4" />
           </video>
-        </div>
-
-        <center>
           <div id="workIcons">
-            <div className="icons">
-              <Link to="/experience">
-                <h3>about</h3>
-              </Link>
-            </div>
-
-            <div className="icons">
-              <Link to="/reel">
-                <h3>reel</h3>
-              </Link>
-            </div>
-
-            <div className="icons">
-              <Link to="/portfolio">
-                <h3>portfolio</h3>
-              </Link>
-            </div>
+            <Link to="/experience" className="home-button">
+              <h3>about</h3>
+            </Link>
+            <Link to="/reel" className="home-button">
+              <h3>reel</h3>
+            </Link>
+            <Link to="/portfolio" className="home-button">
+              <h3>portfolio</h3>
+            </Link>
           </div>
-        </center>
+        </div>
       </div>
     </>
   );

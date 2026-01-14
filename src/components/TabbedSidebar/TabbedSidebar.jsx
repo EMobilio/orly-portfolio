@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import './TabbedSidebar.css';
 
-const TabbedSidebar = ({ tabs, defaultTab, content, containerId = 'designPageContainer', sidebarId = 'designSidebar' }) => {
+const TabbedSidebar = ({ tabs, defaultTab, content }) => {
   const [activeTab, setActiveTab] = useState(defaultTab || tabs[0]?.id);
 
   const handleClick = (id) => {
@@ -12,13 +13,13 @@ const TabbedSidebar = ({ tabs, defaultTab, content, containerId = 'designPageCon
   };
 
   return (
-    <div id={containerId}>
-      <aside id={sidebarId}>
-        <ul id="designTabs">
+    <div id="workPageContainer">
+      <aside id="portfolioSidebar">
+        <ul id="sidebarTabs">
           {tabs.map((tab) => (
             <li key={tab.id}>
               <button
-                className={`designTab ${activeTab === tab.id ? 'active' : ''}`}
+                className={`sidebarTab ${activeTab === tab.id ? 'active' : ''}`}
                 onClick={() => handleClick(tab.id)}
               >
                 {tab.label}

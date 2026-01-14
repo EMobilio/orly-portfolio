@@ -1,0 +1,129 @@
+/* Design Page Tabbed Layout */
+#workPageContainer {
+	display: flex;
+	width: 100%;
+	min-height: calc(100vh - 200px);
+	align-items: stretch;
+}
+
+#portfolioSidebar {
+	width: 200px;
+	background-color: #0f2827;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+#sidebarTabs {
+	list-style: none;
+	padding: 6rem 0 0 0;
+	margin: 0;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	align-self: flex-start;
+	background-color: #0f2827;
+	z-index: 1;
+}
+
+#sidebarTabs li {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.sidebarTab {
+	width: 100%;
+	padding: 15px 20px;
+	background-color: transparent;
+	border: none;
+	border-left: 4px solid transparent;
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	color: #e9e9e9;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: block;
+	box-sizing: border-box;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.sidebarTab:hover {
+	background-color: #ffc514;
+}
+
+.sidebarTab.active {
+	color: #ffc514;
+	border-left-color: #ffc514;
+}
+
+.sidebarTab.active:hover {
+	color: #e9e9e9;
+}
+
+#workContainer {
+	background-color: #f9f9f9;
+	width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    /* Mobile Design Page Styles */
+    #workPageContainer {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    #portfolioSidebar {
+        width: 100%;
+        border-right: none;
+    }
+
+    #sidebarTabs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+    }
+
+    #sidebarTabs li {
+        flex: 1;
+        display: flex;
+        min-width: 0;
+    }
+
+    .sidebarTab {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: normal;
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        line-height: 1.3;
+    }
+
+    .sidebarTab.active {
+        border-left: none;
+        border-bottom-color: #ffc514;
+    }
+
+    #workContainer {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebarTab {
+        font-size: 14px;
+    }
+}

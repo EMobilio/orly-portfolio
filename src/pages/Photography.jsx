@@ -1,4 +1,4 @@
-import TabbedSidebar from '../components/TabbedSidebar';
+import TabbedSidebar from '../components/TabbedSidebar/TabbedSidebar.jsx';
 
 const Photography = () => {
   const tabs = [
@@ -12,7 +12,7 @@ const Photography = () => {
       <>
         <center><h3 className="designTitle">landscape</h3></center>
         <br />
-        <div id="designCont1">
+        <div id="designCont">
           <div id="leftPhoto">
             <img src="/images/photography/landscape/DSC_0373 edited.png" alt="acadia" loading="lazy" />
             <img src="/images/photography/landscape/Poland Grass House.jpg" alt="house in grass" loading="lazy" />
@@ -30,7 +30,7 @@ const Photography = () => {
       <>
         <center><h3 className="designTitle">still life</h3></center>
         <br />
-        <div id="designCont1">
+        <div id="designCont">
           <div id="leftPhoto">
             <img src="/images/photography/still-life/Acadian Seagull 1.jpg" alt="seagull at acadia" loading="lazy" />
             <img src="/images/photography/still-life/DSC_0215.JPG" alt="chipmunk" loading="lazy" />
@@ -52,7 +52,7 @@ const Photography = () => {
       <>
         <center><h3 className="designTitle">wedding and engagement</h3></center>
         <br />
-        <div id="designCont1">
+        <div id="designCont">
           <div id="leftPhoto">
             <img src="/images/photography/portrait/DSC_0205 copy v1.png" alt="engagement photo" loading="lazy" />
             <img src="/images/photography/portrait/DSC_0160 copy V1.png" alt="engagement photo" loading="lazy" />

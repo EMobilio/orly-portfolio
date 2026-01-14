@@ -1,6 +1,6 @@
-import TabbedSidebar from "../components/TabbedSidebar";
+import TabbedSidebar from "../components/TabbedSidebar/TabbedSidebar.jsx";
 
-const Videos = () => {
+const Video = () => {
 
   const tabs = [
     { id: 'animation', label: 'animation' },
@@ -173,5 +173,5 @@ const Videos = () => {
   );
 };
 
-export default Videos;
+export default Video;
 
