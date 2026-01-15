@@ -8,14 +8,14 @@ body {
 h2 {
 	font-size: 30px;
 	color: #a0b4b1;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Afacad Flux', sans-serif;
 	margin: 0px;
 	text-align: center;
 	display: inline-block;
 }
 
 h3 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Afacad Flux', sans-serif;
 	color: #003326;
 	padding: 0px;
 	margin: 0px;
@@ -23,7 +23,7 @@ h3 {
 
 p, ul li {
 	color: #f9f9f9;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Afacad Flux', sans-serif;
 	margin: 0px;
 	width: 90%;
 }
@@ -69,83 +69,11 @@ p, ul li {
 
 .art img {
 	transition: transform 0.3s ease, filter 0.3s ease;
+	cursor: pointer;
 }
 
 .art:hover img {
 	filter: opacity(0.5);
-}
-
-/* Modal */
-.modal-overlay {
-	position: fixed;
-	inset: 0;
-	background: rgba(0, 0, 0, 0.9);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 1000;
-}
-
-.modal-content {
-	position: relative;
-	width: 90vw;
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.modal-image-container {
-	width: 45%;
-	min-width: 400px;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.modal-image-container img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-}
-
-.modal-close {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	background: none;
-	border: none;
-	color: white;
-	font-size: 4rem;
-	cursor: pointer;
-	z-index: 1001;
-	line-height: 1;
-	padding: 0;
-	width: 40px;
-	height: 40px;
-}
-
-.modal-nav {
-	position: absolute;
-	top: 50%;
-	background: none;
-	border: none;
-	color: white;
-	font-size: 6rem;
-	cursor: pointer;
-}
-
-.modal-close:hover, .modal-nav:hover {
-	opacity: 0.7;
-}
-
-.modal-prev {
-	left: 10px;
-}
-
-.modal-next {
-	right: 10px;
 }
 
 .marginLeft {
@@ -245,7 +173,7 @@ p, ul li {
 	background-color: #f9f9f9;
 	margin: 0 auto;
 	width: 100%;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Afacad Flux', sans-serif;
 }
 
 #workContainer {
@@ -491,48 +419,19 @@ p a {
 		padding-top: 0;
 	}
 
-	#leftPhoto img {
-		width: 95%;
-		clear: both;
+	.art {
+		width: 90%;
+		margin: 0 auto;
 	}
 
-	#leftPhoto {
-		margin-left: 5%;
-		width: 95%;
-		clear: both;
+	#leftArt, #rightArt, #leftPhoto, #rightPhoto {
+		width: 100%;
 	}
 
-	#rightPhoto img {
-		width: 95%;
-		clear: both;
-	}
-
-	#rightPhoto {
-		clear: both;
-		margin-left: 5%;
-		width: 95%;
-	}
-
-	#leftArt img {
-		width: 95%;
+	#leftArt img, #rightArt img, #leftPhoto img, #rightPhoto img {
+		width: 100%;
 		clear: both;
 		padding-bottom: 5px;
-	}
-
-	#rightArt img {
-		width: 95%;
-		clear: both;
-		padding-bottom: 5px;
-	}
-
-	#leftArt {
-		clear: both;
-		margin-left: 5.5%;
-	}
-
-	#rightArt {
-		clear: both;
-		margin-left: 5.5%;
 	}
 
 	#workContainer {
@@ -611,7 +510,7 @@ p a {
 	p, ul li {
 		font-size: 25px;
 		color: #0f2827;
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Afacad Flux', sans-serif;
 		font-weight: 500;
 		margin: 0px;
 		margin-left: 20px;
@@ -673,7 +572,7 @@ p a {
 		align-content: center;
 		margin-left: 8%;
 		color: #0f2827;
-		font-family: 'Oswald,' sans-serif;
+		font-family: 'Afacad Flux', sans-serif;
 		margin-bottom: 40px;
 	}
 
@@ -687,7 +586,7 @@ p a {
 
 	#portIcons h3 {
 		font-size: 48px;
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Afacad Flux', sans-serif;
 		font-weight: 500;
 	}
 
@@ -719,7 +618,7 @@ p a {
 	#aboutMe h3 {
 		padding-top: 20px;
 		font-size: 30px;
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Afacad Flux', sans-serif;
 		font-weight: 500;
 	}
 
@@ -743,54 +642,35 @@ p a {
 		text-align: right;
 	}
 
-	#leftPhoto img {
-		width: 100%;
-		clear: both;
-		padding-bottom: 1%;
-	}
-
-	#rightPhoto img {
-		width: 100%;
-		clear: both;
-		padding-bottom: 1%;
-	}
-
-	#leftPhoto {
-		width: 45%;
-		padding-left: 1%;
-	}
-
-	#rightPhoto {
-		width: 45%;
-		padding-left: 1%;
-	}
-
 	#photography {
 		display: flex;
 		justify-content: center;
 		padding-bottom: 20px;
 	}
 
-	#leftArt img {
+	#leftArt img, #rightArt img, #leftPhoto img, #rightPhoto img {
 		width: 100%;
 		clear: both;
 		padding-bottom: 1%;
+		margin: 0 auto;
 	}
 
-	#rightArt img {
-		width: 100%;
-		clear: both;
-		padding-bottom: 1%;
+
+	#leftArt, #leftPhoto {
+		width: 45%;
 	}
 
-	#leftArt {
+	#rightArt, #rightPhoto {
 		width: 45%;
 		padding-left: 1%;
 	}
 
-	#rightArt {
-		width: 45%;
-		padding-left: 1%;
+	.art {
+		width: 80%;
+	}
+
+	#leftArt .art, #leftPhoto .art {
+		margin-left: auto;
 	}
 
 	#designCont {

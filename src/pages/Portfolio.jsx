@@ -7,11 +7,11 @@ const Portfolio = () => {
 
   const imageRotations = {
     videos: [
-      "/images/digital-drawing/Dinosaur Icon.png",
-      "/images/digital-drawing/Blooming Hands.jpg",
+      "/images/digital-drawing/Dinosaur Icon.webp",
+      "/images/digital-drawing/Blooming Hands.webp",
     ],
     design: [
-      "/images/digital-drawing/Blooming Hands.jpg",
+      "/images/digital-drawing/Blooming Hands.webp",
     ],
     photography: [
       "/images/photography/still-life/Flowers and Water.jpg",

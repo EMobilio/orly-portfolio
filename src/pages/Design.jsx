@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ImageModal from '../components/ImageModal';
-import TabbedSidebar from '../components/TabbedSidebar/TabbedSidebar';
+import TabbedSidebar from '../components/TabbedSidebar/TabbedSidebar.jsx';
+import ImageModal from '../components/ImageModal/ImageModal.jsx';
 
 const Design = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -57,10 +57,10 @@ const Design = () => {
     ],
     'digital-drawing': [
       { src: "/images/digital-drawing/Omer_Adam_Tribute.png", alt: "Omer Adam drawing", title: "Omer Adam Tribute", description: "Portrait illustration" },
-      { src: "/images/digital-drawing/Blooming Hands.jpg", alt: "colorful hands drawing", title: "Blooming Hands", description: "Digital illustration" },
-      { src: "/images/digital-drawing/Digital Polish Bright.jpg", alt: "nail polish drawing", title: "Digital Polish", description: "Product illustration" },
+      { src: "/images/digital-drawing/Blooming Hands.webp", alt: "colorful hands drawing", title: "Blooming Hands", description: "Digital illustration" },
+      { src: "/images/digital-drawing/Digital Polish Bright.webp", alt: "nail polish drawing", title: "Digital Polish", description: "Product illustration" },
       { src: "/images/digital-drawing/Until the Last Hostage.png", alt: "until the last hostage drawing", title: "Until the Last Hostage", description: "Advocacy artwork" },
-      { src: "/images/digital-drawing/Home_11x17.png", alt: "home drawing", title: "Home", description: "Conceptual piece" },
+      { src: "/images/digital-drawing/Home_11x17.webp", alt: "home drawing", title: "Home", description: "Conceptual piece" },
       { src: "/images/digital-drawing/Zioness_Mia_Schem_v2.webp", alt: "Mia Schem drawing", title: "Mia Schem", description: "Portrait tribute" },
       { src: "/images/digital-drawing/Retro Eyes.png", alt: "comic eyes", title: "Retro Eyes", description: "Pop art style" },
       { src: "/images/digital-drawing/Mobilio_Curly Haired Dailies-04.png", alt: "hair design", title: "Curly Haired Dailies", description: "Character design" },
@@ -86,14 +86,14 @@ const Design = () => {
         <div id="leftArt">
           {leftImages.map((img, index) => (
             <div key={index} className="art" onClick={() => handleImageClick(category, index)}>
-              <img src={img.src} alt={img.alt} loading="lazy" style={{ cursor: 'pointer' }} />
+              <img src={img.src} alt={img.alt} loading="lazy" />
             </div>
           ))}
         </div>
         <div id="rightArt">
           {rightImages.map((img, index) => (
             <div key={index + midpoint} className="art" onClick={() => handleImageClick(category, index + midpoint)}>
-              <img src={img.src} alt={img.alt} loading="lazy" style={{ cursor: 'pointer' }} />
+              <img src={img.src} alt={img.alt} loading="lazy" />
             </div>
           ))}
         </div>
