@@ -58,6 +58,7 @@ const Footer = () => {
               <li><Link to="/video" className={isActive('/video')} onClick={() => scrollUp()}>Video</Link></li>
               <li><Link to="/design" className={isActive('/design')} onClick={() => scrollUp()}>Design</Link></li>
               <li><Link to="/photography" className={isActive('/photography')} onClick={() => scrollUp()}>Photography</Link></li>
+              <li><Link to="/exhibitions" className={isActive('/exhibitions')} onClick={() => scrollUp()}>Exhibitions</Link></li>
             </ul>
           </div>
 

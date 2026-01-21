@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logoImage from '../../../img/Orm 2022 Logo-19.png';
 import './Header.css';
 
 const Header = () => {
@@ -38,7 +37,7 @@ const Header = () => {
       <div id="secFlex">
         <div id="logo">
           <Link to="/">
-            <img src={logoImage} alt="Orly Mobilio Logo" />
+            <img src="/favicon.png" alt="Orly Mobilio Logo" />
           </Link>
         </div>
 
@@ -70,6 +69,7 @@ const Header = () => {
             <li><Link to="/video" className={isActive('/video')} onClick={handleLinkClick}>video</Link></li>
             <li><Link to="/design" className={isActive('/design')} onClick={handleLinkClick}>design</Link></li>
             <li><Link to="/photography" className={isActive('/photography')} onClick={handleLinkClick}>photography</Link></li>
+            <li><Link to="/exhibitions" className={isActive('/exhibitions')} onClick={handleLinkClick}>exhibitions</Link></li>
           </ul>
         </nav>
       </div>
