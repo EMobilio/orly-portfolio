@@ -28,15 +28,15 @@ const Design = () => {
       { src: "/images/digital-design/Eva_and_Arie_Halpern_Merit_Award.png", alt: "award flyer", title: "Halpern Merit Award", description: "Award announcement design" },
     ],
     'logos-and-marketing': [
-      { src: "/images/logos-and-marketing/dot vintage logo.png", alt: "dot vintage logo", title: "Dot Vintage Logo", description: "Brand identity design" },
-      { src: "/images/logos-and-marketing/CIA Logo v4.png", alt: "careers in aesthetics logo", title: "Careers in Aesthetics", description: "Logo design" },
-      { src: "/images/logos-and-marketing/RAE_Logo.png", alt: "RAE logo", title: "RAE Logo", description: "Brand identity" },
-      { src: "/images/logos-and-marketing/No_More_Jewish_Victims_logo.png", alt: "No More Jewish Victims logo", title: "No More Jewish Victims", description: "Advocacy campaign logo" },
-      { src: "/images/logos-and-marketing/together we will win_final blue-01.png", alt: "together we will win logo", title: "Together We Will Win", description: "Campaign branding" },
-      { src: "/images/logos-and-marketing/Feiler's Jerky Logo.png", alt: "feiler's jerky logo", title: "Feiler's Jerky", description: "Product logo design" },
-      { src: "/images/logos-and-marketing/Strive Sports Logo_No Border.png", alt: "strive sports logo", title: "Strive Sports", description: "Sports brand logo" },
-      { src: "/images/logos-and-marketing/BT Medical Innovations_Logo.png", alt: "BT Medical Innovations logo", title: "BT Medical Innovations", description: "Medical tech branding" },
-      { src: "/images/logos-and-marketing/Alumni_Newsletter_Cover.png", alt: "alumni newsletter cover", title: "Alumni Newsletter", description: "Publication cover design" },
+      { src: "/images/logos-and-marketing/dot vintage logo.webp", alt: "dot vintage logo", title: "Dot Vintage Logo", description: "Brand identity design" },
+      { src: "/images/logos-and-marketing/CIA Logo v4.webp", alt: "careers in aesthetics logo", title: "Careers in Aesthetics", description: "Logo design" },
+      { src: "/images/logos-and-marketing/RAE_Logo.webp", alt: "RAE logo", title: "RAE Logo", description: "Brand identity" },
+      { src: "/images/logos-and-marketing/No_More_Jewish_Victims_logo.webp", alt: "No More Jewish Victims logo", title: "No More Jewish Victims", description: "Advocacy campaign logo" },
+      { src: "/images/logos-and-marketing/together we will win_final blue-01.webp", alt: "together we will win logo", title: "Together We Will Win", description: "Campaign branding" },
+      { src: "/images/logos-and-marketing/Feiler's Jerky Logo.webp", alt: "feiler's jerky logo", title: "Feiler's Jerky", description: "Product logo design" },
+      { src: "/images/logos-and-marketing/Strive Sports Logo_No Border.webp", alt: "strive sports logo", title: "Strive Sports", description: "Sports brand logo" },
+      { src: "/images/logos-and-marketing/BT Medical Innovations_Logo.webp", alt: "BT Medical Innovations logo", title: "BT Medical Innovations", description: "Medical tech branding" },
+      { src: "/images/logos-and-marketing/Alumni_Newsletter_Cover.webp", alt: "alumni newsletter cover", title: "Alumni Newsletter", description: "Publication cover design" },
     ],
     'painting': [
       { src: "/images/paintings/Susak painting.jpg", alt: "susak painting", title: "Susak", description: "Acrylic painting" },
@@ -54,9 +54,10 @@ const Design = () => {
       { src: "/images/paintings/For_the_Lightning.png", alt: "for lightning painting", title: "For the Lightning", description: "Environmental series" },
       { src: "/images/paintings/For_the_Rainbows.png", alt: "for rainbows painting", title: "For the Rainbows", description: "Environmental series" },
       { src: "/images/paintings/You_Are_Not_Alone.png", alt: "you are not alone painting", title: "You Are Not Alone", description: "Message piece" },
+      { src: "/images/paintings/Dog.webp", alt: "", title: "", description: "" },
     ],
     'digital-drawing': [
-      { src: "/images/digital-drawing/Omer_Adam_Tribute.png", alt: "Omer Adam drawing", title: "Omer Adam Tribute", description: "Portrait illustration" },
+      { src: "/images/digital-drawing/Omer_Adam_Tribute.webp", alt: "Omer Adam drawing", title: "Omer Adam Tribute", description: "Portrait illustration" },
       { src: "/images/digital-drawing/Blooming Hands.webp", alt: "colorful hands drawing", title: "Blooming Hands", description: "Digital illustration" },
       { src: "/images/digital-drawing/Digital Polish Bright.webp", alt: "nail polish drawing", title: "Digital Polish", description: "Product illustration" },
       { src: "/images/digital-drawing/Until the Last Hostage.png", alt: "until the last hostage drawing", title: "Until the Last Hostage", description: "Advocacy artwork" },
@@ -86,6 +87,9 @@ const Design = () => {
         <div id="leftArt">
           {leftImages.map((img, index) => (
             <div key={index} className="art" onClick={() => handleImageClick(category, index)}>
+              <div className='art-overlay'>
+                <p className="art-title">{img.title} </p>
+              </div>
               <img src={img.src} alt={img.alt} loading="lazy" />
             </div>
           ))}
@@ -93,6 +97,9 @@ const Design = () => {
         <div id="rightArt">
           {rightImages.map((img, index) => (
             <div key={index + midpoint} className="art" onClick={() => handleImageClick(category, index + midpoint)}>
+              <div className='art-overlay'>
+                <p className="art-title">{img.title} </p>
+              </div>
               <img src={img.src} alt={img.alt} loading="lazy" />
             </div>
           ))}

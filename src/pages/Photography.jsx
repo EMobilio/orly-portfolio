@@ -55,13 +55,19 @@ const Photography = () => {
           <div id="leftPhoto">
             {leftImages.map((img, index) => (
               <div key={index} className="art" onClick={() => handleImageClick(category, index)}>
+                <div className='art-overlay'>
+                  <p className="art-title">{img.title} </p>
+                </div>
                 <img src={img.src} alt={img.alt} loading="lazy" />
               </div>
             ))}
           </div>
           <div id="rightPhoto">
             {rightImages.map((img, index) => (
-              <div key={index} className="art" onClick={() => handleImageClick(category, index)}>
+              <div key={index + midpoint} className="art" onClick={() => handleImageClick(category, index + midpoint)}>
+                <div className='art-overlay'>
+                  <p className="art-title">{img.title} </p>
+                </div>
                 <img src={img.src} alt={img.alt} loading="lazy" />
               </div>
             ))}

@@ -27,7 +27,6 @@ const Reel = () => {
           </div>
         </center>
       </div>
-      <br />
     </>
   );
 };
